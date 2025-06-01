@@ -1,3 +1,5 @@
+import java.time.Instant
+
 plugins {
     id("java")
 //    id("org.jetbrains.kotlin.jvm") version "1.9"
@@ -19,7 +21,7 @@ dependencies {
 buildConfig {
     buildConfigField("APP_NAME", project.name)
     buildConfigField("APP_VERSION", provider { "${project.version}" })
-    buildConfigField("BUILD_TIME", System.currentTimeMillis())
+    buildConfigField("BUILD_TIME", Instant.now().epochSecond)
 }
 
 tasks.withType<Jar> {
