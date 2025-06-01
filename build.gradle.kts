@@ -22,3 +22,8 @@ buildConfig {
     buildConfigField("BUILD_TIME", System.currentTimeMillis())
 }
 
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "io.github.Tors_0.Main"
+    }
+}

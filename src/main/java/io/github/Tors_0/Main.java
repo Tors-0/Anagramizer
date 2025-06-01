@@ -11,7 +11,7 @@ public class Main {
 
     public static final TreeSet<String> dictionary = new TreeSet<>();
     public static final File dictionaryFileLocation =
-            new File("src/main/resources/words_alpha.txt");
+            new File("words_alpha.txt");
 
     public static void print(Object o, boolean ln) {
         if (ln) System.out.println(o);
