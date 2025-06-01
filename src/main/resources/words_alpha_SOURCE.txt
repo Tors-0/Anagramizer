@@ -1,0 +1,2 @@
+https://github.com/dwyl/english-words
+wordlist modified to remove single letters
