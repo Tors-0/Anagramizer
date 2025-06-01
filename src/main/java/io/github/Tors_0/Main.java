@@ -49,7 +49,7 @@ public class Main {
                     new FileInputStream(dictionaryFileLocation));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(
-                    "Failed to initialize dictionary, please try re-downloading program from source");
+                    "Failed to initialize dictionary, please try re-downloading program from source or opening a GitHub issue");
         }
 
         while (dictionaryFileReader.hasNextLine()) {
